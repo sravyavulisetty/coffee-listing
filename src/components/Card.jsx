@@ -2,10 +2,6 @@ import React from 'react'
 import star from '../Star_fill.svg';
 import nostar from '../Star.svg';
 const Card = ({image, name, price, rating, votes, available, popular}) => {
-  // const [votings, setVotes] = useState();
-  // useEffect(()=>{
-  //   setVotes(votes);
-  // },[])
   return (
     <div className='flex flex-row flex-wrap p-4'>
       <div className='flex flex-col'>
