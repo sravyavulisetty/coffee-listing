@@ -26,10 +26,10 @@ function App() {
   }
   return (
     <>
-    <div style={{'--image-url': `url(${bgcafe})`}} className='relative bg-[image:var(--image-url)] bg-no-repeat bg-cover bg-top m-0 p-0 h-80 font-fontDM '>
-      <div className='absolute top-1/2 right-1/2 translate-x-1/2 bg-zinc-900 rounded-lg min-h-screen w-3/4 z-10'>
+    <div style={{'--image-url': `url(${bgcafe})`}} className='relative bg-[image:var(--image-url)] bg-no-repeat bg-cover bg-top m-0 p-0 h-80 font-fontDM'>
+      <div className='absolute top-1/2 right-1/2 translate-x-1/2 bg-zinc-900 rounded-lg min-h-screen w-3/4 z-10 font-bold'>
         <div style={{backgroundImage: `url(${vector})`}} className='top-1/2 left-1/2 bg-no-repeat bg-right-top flex flex-col items-center justify-center m-2 mt-20'>
-          <p className='text-white text-3xl font-font0 font-extrabold'>Our Collection</p>
+          <p className='text-white text-3xl font-extrabold'>Our Collection</p>
           <p className='text-[#6F757C] lg:mx-72 md:mx-24 sm:mx-20 text-center mt-4 font-semibold text-md'>Introducing our Coffee Collection, a selection of unique coffees from different roast types and origins, expertly roasted in small batches and shipped fresh weekly.</p>
           <div className='flex gap-2 items-center justify-center mt-8'>
             <button className='text-white text-sm p-2 rounded-lg font-semibold' style={styles2} onClick={()=>setAvailproducts(false)}>All Products</button>
