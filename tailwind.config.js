@@ -13,6 +13,9 @@ module.exports = {
         font2:'0.875rem',
         font3:'0.625rem',
         font4:'0.75rem'
+      },
+      backgroundPosition:{
+        bgpos :'65% 4%'
       }
     },
   plugins: [],

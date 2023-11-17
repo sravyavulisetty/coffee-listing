@@ -26,9 +26,9 @@ function App() {
   }
   return (
     <>
-    <div style={{'--image-url': `url(${bgcafe})`}} className='relative bg-[image:var(--image-url)] bg-no-repeat bg-cover bg-top m-0 p-0 h-80 font-fontDM'>
-      <div className='absolute top-1/2 right-1/2 translate-x-1/2 bg-zinc-900 rounded-lg min-h-screen w-3/4 z-10 font-bold'>
-        <div style={{backgroundImage: `url(${vector})`}} className='top-1/2 left-1/2 bg-no-repeat bg-right-top flex flex-col items-center justify-center m-2 mt-20'>
+    <div style={{'--image-url': `url(${bgcafe})`}} className='relative bg-[image:var(--image-url)] bg-no-repeat bg-cover bg-top m-0 p-0 h-80 font-bold'>
+      <div style={{backgroundImage: `url(${vector})`}} className='absolute top-1/2 right-1/2 translate-x-1/2 bg-zinc-900 rounded-lg min-h-screen w-3/4 z-10 font-fontDM bg-bgpos bg-no-repeat'>
+        <div className='top-1/2 left-1/2 flex flex-col items-center justify-center m-2 mt-20'>
           <p className='text-white text-3xl font-extrabold'>Our Collection</p>
           <p className='text-[#6F757C] lg:mx-72 md:mx-24 sm:mx-20 text-center mt-4 font-semibold text-md'>Introducing our Coffee Collection, a selection of unique coffees from different roast types and origins, expertly roasted in small batches and shipped fresh weekly.</p>
           <div className='flex gap-2 items-center justify-center mt-8'>
@@ -37,12 +37,12 @@ function App() {
           </div>
         </div>
         {!availproducts ? 
-        <div className='pt-10 flex gap-1 flex-row flex-wrap items-center justify-center'>
+        <div className='pt-5 flex gap-1 flex-row flex-wrap items-center justify-center'>
         {products.map((product)=>(
           <Card {...product} key={product.id}/>
         ))}
         </div>:
-        <div className='pt-10 flex gap-1 flex-row flex-wrap items-center justify-center'>
+        <div className='pt-5 flex gap-1 flex-row flex-wrap items-center justify-center'>
         {products.map((product)=>(
           product.available && 
           <Card {...product} key={product.id}/>
