@@ -32,8 +32,8 @@ function App() {
           <p className='text-white text-3xl font-extrabold'>Our Collection</p>
           <p className='text-[#6F757C] lg:mx-72 md:mx-24 sm:mx-20 text-center mt-4 font-semibold text-md'>Introducing our Coffee Collection, a selection of unique coffees from different roast types and origins, expertly roasted in small batches and shipped fresh weekly.</p>
           <div className='flex gap-2 items-center justify-center mt-8'>
-            <button className='text-white text-sm p-2 rounded-lg font-semibold' style={styles2} onClick={()=>setAvailproducts(false)}>All Products</button>
-            <button className='text-white text-sm pl-4 rounded-lg p-2 font-semibold' style={styles} onClick={()=>setAvailproducts(true)}>Available Now</button>
+            <button className='text-white text-sm p-2 px-3 rounded-lg font-semibold' style={styles2} onClick={()=>setAvailproducts(false)}>All Products</button>
+            <button className='text-white text-sm pl-4 px-3 rounded-lg p-2 font-semibold' style={styles} onClick={()=>setAvailproducts(true)}>Available Now</button>
           </div>
         </div>
         {!availproducts ? 
@@ -51,7 +51,7 @@ function App() {
         }
       </div>
     </div>
-    <div className='bg-black min-h-screen m-0 p-0'>
+    <div className='bg-black h-screen m-0 p-0'>
     </div>
     </>
   );
